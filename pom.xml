@@ -116,12 +116,6 @@
             <scope>system</scope>
         </dependency>
         <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-            <version>1.7.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>net.frozenorb</groupId>
             <artifactId>mspigot-api</artifactId>
             <version>1.7.10-R0.1-SNAPSHOT</version>
