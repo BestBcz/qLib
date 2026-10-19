@@ -8,12 +8,6 @@
     <name>qLib</name>
     <version>ggbd31f</version>
 
-    <parent>
-        <groupId>net.frozenorb</groupId>
-        <artifactId>frozenorb-parent</artifactId>
-        <version>SNAPSHOT</version>
-    </parent>
-
     <properties>
         <minehq.mavenLevel>minehq-high</minehq.mavenLevel>
         <minehq.pluginAuthor>MineHQ Development Team</minehq.pluginAuthor>
@@ -21,6 +15,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <build>
@@ -64,7 +59,7 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.18.24</version>
+                            <version>${lombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
@@ -108,10 +103,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>net.frozenorb</groupId>
             <artifactId>mspigot-server</artifactId>
             <version>1.7.10-R0.1-SNAPSHOT</version>
-            <systemPath>${project.basedir}/lib/mspigot.jar</systemPath>
+            <systemPath>${project.basedir}/lib/spigot-server-1.7.10-R0.1-SNAPSHOT.jar</systemPath>
             <scope>system</scope>
         </dependency>
         <dependency>
@@ -130,9 +131,9 @@
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib-v1_7_R4</artifactId>
-            <version>3.7.0-BETA</version>
+            <version>3.7.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/ProtocolLib-v1_7_R4-3.7.0-BETA.jar</systemPath>
+            <systemPath>${project.basedir}/lib/ProtocolLib-Legacy.jar</systemPath>
         </dependency>
         <!-- Misc. Jars -->
         <dependency>
