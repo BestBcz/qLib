@@ -14,8 +14,8 @@ NametagPacketRestriction:
   BypassPrefix: '&a'
 Command:
   TimeThreshold: 10
-AutoRebootTimes:
-  - 12
+# Scheduled automatic reboots are disabled in code; legacy values are ignored.
+AutoRebootTimes: []
 disableNametags: false
 disableTab: false
 disableScoreboard: false
